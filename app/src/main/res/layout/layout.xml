@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--  Layout chứa Text View của Result and Working - 26/03/2022 - Nguyễn Thành Trọng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <!--   Woring TextView   - 26/03/2022 - Nguyễn Thành Trọng  -->
+        <TextView
+            android:id="@+id/workingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:text="2 + 3"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            tools:ignore="RtlCompat"></TextView>
+
+
+        <!--    Result Text View  - 26/03/2022 - Nguyễn Thành Trọng  -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:text="5"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            tools:ignore="RtlCompat"></TextView>
+
+    </LinearLayout>
+
+    <!--  Layout chứa các Button - 26/03/2022 - Nguyễn Thành Trọng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-11dp"
+            android:layout_weight="1">
+
+
+            <!--    Button số 7  - 26/03/2022 - Nguyễn Thành Trọng -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="sevenOnClick"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button số 8 - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="eightOnClick"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button số 9 - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="nineOnClick"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button Division  - 26/03/2022 - Nguyễn Thành Trọng -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:onClick="divisionOnClick"
+                android:text="÷"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-11dp"
+            android:layout_weight="1">
+
+            <!--    Button số 4 - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="fourOnClick"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button số 5  - 26/03/2022 - Nguyễn Thành Trọng -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="fiveOnClick"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button số 6 - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="sixOnClick"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button multiple - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:onClick="multipleOnClick"
+                android:text="X"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-11dp"
+            android:layout_weight="1">
+
+            <!--    Button số 1 - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="oneOnClick"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button số 2  - 26/03/2022 - Nguyễn Thành Trọng -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="twoOnClick"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button số 3 - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="threeOnClick"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button Subtract  - 26/03/2022 - Nguyễn Thành Trọng -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:onClick="subtractionOnClick"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-11dp"
+            android:layout_weight="1"
+            android:textSize="40sp">
+
+            <!--    Button số 0 c  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="zeroOnClick"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:translationX="0.5dp"></Button>
+
+
+            <!--    Button Dot  - 26/03/2022 - Nguyễn Thành Trọng -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnNumber"
+                android:onClick="dotOnClick"
+                android:paddingRight="1dp"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:translationX="1dp"></Button>
+
+
+            <!--    Button Plus - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:onClick="addOnClick"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--    Button Clear - 26/03/2022 - Nguyễn Thành Trọng  -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:onClick="clearOnClick"
+                android:text="C"
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+
+
+            <!--    Button Equal  - 26/03/2022 - Nguyễn Thành Trọng -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:onClick="resultOnClick"
+                android:text="="
+                android:textColor="@color/black"
+                android:textSize="40sp"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
